@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies and Passion</title>
+    <link rel="stylesheet" href="hobbies.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1> <i>My Hobbies and Passion</i></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="About_me.html" target="_blank">About</a></li>
+                    <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+
+ <!--hobbies and Passion-->
+
+<section id="hobbies" class="hobbies">
+    <div class="project">
+        <a href="https://youtu.be/fF8oJqZ-Yas?si=zx1gFpcGHAa1uSrm" target="_blank">
+        <img src="image/hiking.jpeg" alt="Hiking" title="Click to see more about Gunung Datuk!!"></a>
+        <h3><i><u>Hiking!!!</u></i> </h3>
+        <p>
+        <p>Hiking is a relatively new hobby for me to be honest. I gained a liking in this activity due to its rewarding view at the top of each hill or mountains that I have climbed.</p>
+            It gave me a sense of peace and serenity after going through rugged and slippery terrain. One of the mountains I have climbed is Gunung Datuk, which is located in Rembau, Negeri Sembilan.
+            I highly relate my passion for hiking with my life which means we have to go through hardships first before seeing the reward.</p>
+    </div>
+
+    <div class="project">
+        <img src="image/football.jpg" alt="Project 1">
+        <h3><i><u>Football!!</u></i></h3>
+        <p>My passion since I was a little kid.Football has been a part of myself, espescially Manchester United.My dad supported the club and I followed along as a kid. </p> 
+        <p>Once in a while, I played football with my friends because as a student I did not have a lot of free time unfortunately.
+           Supporting Manchester United means a lot to me, I have a lot of their jerseys in my wardrobe. No matter win or lose, I will always support Manchester United and one day I will visit Old Trafford, their stadium in United Kingdom. </p>
+    </div>
+    
+    <div class="project">
+        <img src="image/riding.jpg" alt="Project 3">
+        <h3><i><u>Motorcyle!!</u></i></h3>
+        <p>My companion for the last 2 years.</p>
+        <p>My motorcyle has been my main transportation that I used to go the campus and everywhere. I enjoyed solo riding especially in the late evening.
+        I usually listen to songs during my rides in my airpods so I would not get bored or sleepy.</p>
+        <p>It is a form of therapy to me at some sort. I went everywhere with my motorcycle and I am so grateful that my motorcycle is still functioning well
+        till this day. </p> 
+    </div>
+</section>
+
+<!--Table-->
+    <div class="table">
+        <h3><i>Mountain/Hills that I've climbed!!</i></h3>
+        <table>
+            <tr>
+                <th>Mountain/Hill</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Gunung Datuk</td>
+                <td>Kota,Rembau</td>
+            </tr>
+            <tr>
+                <td>Bukit Melati</td>
+                <td>Nilai</td>
+            </tr>
+            <tr>
+                <td>Bukit Penarikan</td>
+                <td>Bahau</td>
+            </tr>
+        </table>
+    
+<!--Image Mapping-->
+    <div class="container">
+        <div class="image-container">
+        <img src="image/peta-n9.png" usemap="#peta-n9">
+
+        <map name="peta-n9">
+            <area target="_blank" alt="BUKIT MELATI, NILAI" title="BUKIT MELATI, NILAI" href="https://matsudamashimaru.com/2023/10/12/hiking-bukit-melati-in-nilai/" coords="24,236,130,285" shape="rect">
+            <area target="_blank" alt="GUNUNG DATUK, REMBAU" title="GUNUNG DATUK, REMBAU" href="https://www.malaysia-traveller.com/gunung-datuk.html" coords="233,430,49" shape="circle">
+            <area target="_blank" alt="BUKIT PENARIKAN, BAHAU" title="BUKIT PENARIKAN, BAHAU" href="http://amirmuslimteamseladang.blogspot.com/2024/05/puncak-ke-194-bukit-penarikan-bahau-n9.html" coords="330,245,392,261,372,295,324,260" shape="poly">
+        </map>
+        </div>
+    </div>
+
+<!--Multimedia (iframe)-->
+    <div>
+        <h3><i>My Favourite Playlist!!</i></h3>
+        <table style="width: 450px;">
+            <tr>
+            <td><iframe src="https://open.spotify.com/embed/playlist/2tscHKYSu44bxmz7w0I7i2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+            </tr>
+        </table>
+    </div>
+
+
+<!--contact-->
+<footer id="contact">
+    <p>Contact me at: 
+
+        <a href="https://www.instagram.com/mirulhikl?igsh=MXV0c3N3eGd6MDdoeQ%3D%3D&utm_source=qr">
+            <img src="image/Instagram_icon.png" width="29px"></a>
+            <a href="https://www.tiktok.com/@mirulhikl?_t=8sbpTBkvrRo&_r=1 ">
+            <img src="image/tiktok_icon.png" width="30px"></a>
+            <a href="mailto:2022661282@student.uitm.edu.my">
+            <img src="image/Gmail_icon_(2020).svg.png" width="30px"></a>
+    </p>
+    <!-- Live date and time -->
+    <p id="date-time"></p>
+</footer>
+
+<!-- JavaScript to display live date and time -->
+<script>
+    // Function to format the date and time
+    function updateDateTime() {
+        var now = new Date();
+
+        var day = now.getDate();
+        var month = now.getMonth() + 1;
+        var year = now.getFullYear();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        var formattedDate = `${day}/${month}/${year}`;
+        var formattedTime = `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+
+        document.getElementById('date-time').textContent = `Date: ${formattedDate} | Time: ${formattedTime}`;
+    }
+
+    setInterval(updateDateTime, 1000);  // Update every second
+    updateDateTime();  // Call it immediately on load
+</script>
+</body>
+</html>

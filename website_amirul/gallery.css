@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(image/ghibli\ \(resize\).png);
+    background-attachment: fixed;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background-color: #12026a;
+     opacity: 0.9;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul li a:hover 
+{
+    color: rgb(211, 18, 182);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+.audio-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+}
+table, tr, td, th
+{
+    
+    border-collapse:collapse;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+td
+{
+    width: 60%;
+    text-align: center;
+
+}
+th,td
+{
+    padding: 10px;
+}
+th
+{
+    color: white;
+    background-color: #12026a;
+}
+/* General image container styles */
+.image-container img, .landscape-container img {
+    width: 180px;          
+    height: auto;          /* Maintain aspect ratio */
+    margin: 7px;           /* Space between images */
+    border-radius: 8px;    /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Add a shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transition for hover effects */
+}
+
+/* For landscape images */
+.landscape-container img {
+    max-width: 300px; 
+}
+
+/* Optional: Add hover effect for scaling the image */
+.image-container img:hover, .landscape-container img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);  /* Darker shadow on hover */
+}
+
+/* Flexbox layout for image containers */
+.image-container, .landscape-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .about{
+    margin-top: 80px;
+}
+.about {
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-text {
+    width: 100%;
+    text-align: center;
+}
+
+
+.hobbies, .testimonials {
+text-align: center;
+margin-top: 40px;
+}
+
+.hobbies .project, .testimonials .testimonial {
+display: inline-block;
+margin: 20px;
+width: calc(33% - 40px);
+box-sizing: border-box;
+transition: transform 0.3s;
+border-radius: 10px;
+overflow: hidden;
+color: black;
+}
+
+.hobbies .project:hover, .testimonials .testimonial:hover{
+ transform: scale(1.05);
+}
+
+.hobbies img, .testimonials img 
+{
+width: 250px;
+height: auto;
+border-radius: 10px;
+}
+h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+footer {
+     background: #12026a;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}

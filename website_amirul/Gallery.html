@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1> <i>Gallery</i></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="About_me.html" target="_blank">About</a></li>
+                    <li><a href="hobbies_passion.html" target="_blank">Hobbies and Passion</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2><i>INKSPIRE FUTURE!!</i></h2>
+        </div>
+
+    <div class="image-container">
+    <img src="image/fyp.jpg" >         
+    <img src="image/fyp(3).jpg" >
+    <img src="image/fyp(6).jpg">
+    <img src="image/fyp(7).jpg" >
+    <img src="image/fyp(8).jpg" >
+    <img src="image/fyp(10).jpg" >
+    </div>
+
+    <div class="landscape-container">
+        <img src="image/fyp(4).jpg" class="landscape-image" style="width: 250px;">
+        <img src="image/fyp(5).jpg" class="landscape-image" style="width: 250px;">
+        <img src="image/fyp(9).jpg" class="landscape-image" style="width: 250px;">
+    </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2><i>IMCo</i></h2>
+        </div>
+
+    <div class="image-container">
+    <img src="image/amirul(imco).jpg" >         
+    <img src="image/imco(3).jpg" >
+    <img src="image/imco(4).jpg">
+    <img src="image/imco(5).jpg" >
+    <img src="image/imco(6).jpg" >
+    <img src="image/imco(7).jpg" >
+    </div>
+
+    <div class="landscape-container">
+        <img src="image/imco(11).jpg" class="landscape-image" style="width: 250px;">
+        <img src="image/imco(10).jpg" class="landscape-image" style="width: 250px;">
+        <img src="image/imco(9).jpg" class="landscape-image" style="width: 250px;">
+    </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2><i>KOMANDER KESATRIA</i></h2>
+        </div>
+
+    <div class="image-container">
+    <img src="image/komander(1).jpg">         
+    <img src="image/komander(2).jpg">
+    <img src="image/komander(3).jpg">
+    <img src="image/komander(4).jpg">
+    <img src="image/komander(5).jpg">
+    <img src="image/komander(9).jpg">
+    </div>
+
+    <div class="landscape-container">
+        <img src="image/komander(6).jpg" class="landscape-image" style="width: 250px;">
+        <img src="image/komander(7).jpg" class="landscape-image" style="width: 250px;">
+        <img src="image/komander(8).jpg" class="landscape-image" style="width: 250px;">
+    </div>
+    </section>
+
+        <div class="audio-container">
+            <audio controls autoplay>
+                <source src="audio/The Lantis - Bunga Maaf (Visualizer).mp3" type="audio/mpeg">
+                <source src="audio/The Lantis - Bunga Maaf (Visualizer).mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>            
+        </div>
+
+    <!--contact-->
+<footer id="contact">
+    <p>Contact me at: 
+
+        <a href="https://www.instagram.com/mirulhikl?igsh=MXV0c3N3eGd6MDdoeQ%3D%3D&utm_source=qr">
+            <img src="image/Instagram_icon.png" width="29px"></a>
+            <a href="https://www.tiktok.com/@mirulhikl?_t=8sbpTBkvrRo&_r=1 ">
+            <img src="image/tiktok_icon.png" width="30px"></a>
+            <a href="mailto:2022661282@student.uitm.edu.my">
+            <img src="image/Gmail_icon_(2020).svg.png" width="30px"></a>
+    </p>
+
+     <!-- Live date and time -->
+     <p id="date-time"></p>
+    </footer>
+
+    <!-- JavaScript to display live date and time -->
+    <script>
+        // Function to format the date and time
+        function updateDateTime() {
+            var now = new Date();
+
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            var formattedDate = `${day}/${month}/${year}`;
+            var formattedTime = `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+
+            document.getElementById('date-time').textContent = `Date: ${formattedDate} | Time: ${formattedTime}`;
+        }
+
+        setInterval(updateDateTime, 1000);  // Update every second
+        updateDateTime();  // Call it immediately on load
+    </script>
+</body>
+</html>

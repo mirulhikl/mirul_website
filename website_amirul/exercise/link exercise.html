@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title> LINK EXERCISE</title>
+    </head>
+        <body>
+            
+            <h1><a name="top">General Information Links </a></h1>
+            <!-- Relative Links-->
+            Click <a href="download1.php"> Go to Download Page 1</a>
+
+            <!--Absolute Links-->
+           <br> Click <a href="https://bsu.uitm.edu.my/"> to book any space in uitm </a>
+            
+           <hr size="5" color="black">
+
+           <!--Local Link to other page within current website-->
+           <a href="manchester_united.html" target="_blank"> Man United</a>  
+           <a href="biodata.html" target="_blank"> About me</a>   
+           
+           <p>
+           <!--Creating button using button onclick-->
+          <br> <button onclick="document.location = 'biodata.html'"> hi</button>
+          <button onclick="document.location = 'manchester_united.html'"> Hello</button>
+          </p>
+
+        <p>
+        <!-- Using Image as Hyperlink (locally)-->
+        <br> <a href="biodata.html"><img src="image/button.png"></a>
+        </p>
+        <!-- Using image ashyperlink (globally)-->
+         <a href="https://www.instagram.com/tomyamlover/?next=%2F">
+         <img src="image/Instagram_icon.png" width="40px"></a>
+
+         <a href="https://www.instagram.com/tomyamlover/?next=%2F">
+            <img src="image/Instagram_icon.png" width="40px"></a>
+
+        <!--Hyperlink to email-->
+        <a href="mailto:2022661282@student.uitm.edu.my">
+        <img src="image/Gmail_icon_(2020).svg.png" width="40px"></a>
+
+        <!--Hyperlink to phone-->
+        <a href="tel: +601137693547">
+        <img src="image/phone monke.jpg " width="60px"></a>
+
+        <h1>UiTM BRANCHES IN MALAYSIA</h1>
+
+        <!--Image Mapping-->
+        <img src="image/malaysia-map.jpg" usemap="#malaysia-map">
+
+        <map name="malaysia-map">
+            <area target="_blank" alt="UiTM SABAH" title="UiTM SABAH" href="https://sabah.uitm.edu.my/" coords="1409,334,1717,132" shape="rect">
+            <area target="_blank" alt="UiTM SARAWAK" title="UiTM SARAWAK" href="https://sarawak.uitm.edu.my/" coords="1397,252,921,520,1015,622,1430,562" shape="poly">
+        </map>
+
+        <a href="#top">Back to top</a>
+        </body>
+</html>

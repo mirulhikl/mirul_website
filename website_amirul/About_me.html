@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rul's Sanctuary</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <div class="showcase-text">
+            <div id="branding">
+                <h1><i>Rul's Sanctuary</i></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="hobbies_passion.html" target="_blank">Hobbies and Passion</a></li>
+                    <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<!--hero image-->
+    <section class="showcase" id="showcase">
+        <div class="showcase-text">
+            <h1><b><i>Welcome to Amirul's Personal Website</i></b></h1>
+            <p>A sneak peek into my life and adventures!!</p>
+            <button><a href="#about">Learn more about Me!!</a></button>
+        </div>
+    </section>
+
+<!--About-->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! My Name is Amirul Haikal Bin Haizar.
+             I would prefer to be called as Amirul.
+             I am <i>20 Years Old this year (2024)</i> and I am the <b>First born</b> out of 5 siblings.
+             Currently, I am pursuing my studies in <b><i>Diploma in Information Management</i></b> at Universiti Teknologi MARA, Rembau Campus.
+             I enjoyed my free time by praticing active lifestyle such as hiking.</p>
+             <p>Hover on each picture to see more about me!!</p>
+        </div>
+
+        <div class="image-container">
+            <a href="hobbies_passion.html" target="_blank">
+                <img src="image/amirul(hiking).jpg" style= "width: 250px;" alt="Hobbies and Passion" title="HOBBIES AND PASSION">
+            </a>
+
+            <a href="Gallery.html" target="_blank">
+                <img src="image/amirul(dekan).jpg" style= "width: 250px;" alt="University Life" title="GALLERY">
+            </a>
+        </div>
+    </section>
+
+<!--contact-->
+    <footer id="contact">
+        <p>Contact me at: 
+
+            <a href="https://www.instagram.com/mirulhikl?igsh=MXV0c3N3eGd6MDdoeQ%3D%3D&utm_source=qr">
+                <img src="image/Instagram_icon.png" width="29px"></a>
+                <a href="https://www.tiktok.com/@mirulhikl?_t=8sbpTBkvrRo&_r=1 ">
+                <img src="image/tiktok_icon.png" width="30px"></a>
+                <a href="mailto:2022661282@student.uitm.edu.my"></a>
+                <img src="image/Gmail_icon_(2020).svg.png" width="30px"></a>
+        </p>
+        <!-- Live date and time -->
+        <p id="date-time"></p>
+    </footer>
+
+    <!-- JavaScript to display live date and time -->
+    <script>
+        // Function to format the date and time
+        function updateDateTime() {
+            var now = new Date();
+
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            var formattedDate = `${day}/${month}/${year}`;
+            var formattedTime = `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+
+            document.getElementById('date-time').textContent = `Date: ${formattedDate} | Time: ${formattedTime}`;
+        }
+
+        setInterval(updateDateTime, 1000);  // Update every second
+        updateDateTime();  // Call it immediately on load
+    </script>
+
+</body>
+</html>
